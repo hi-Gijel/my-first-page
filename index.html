@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All about me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="images/logo.png" alt="All about me logo" />
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#hello">첫 인사</a></li>
+          <li><a href="#about">기본 소개</a></li>
+          <li><a href="#likes">좋아하는 것</a></li>
+          <li><a href="#qna">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+<!--main part-->
+      <main>
+        <section id="hello">
+          <h2>첫 인사</h2>
+          <p>
+            반갑습니다. 저는 <strong>조경진</strong> 입니다.<br />
+            막연하게 다양한 툴들을 만들고 싶다는 생각에 시작했습니다.
+          </p>
+        </section>
+        <section id="about">
+          <h2>기본 소개</h2>
+          <div class="about-container">
+            <img src="images/profile.png" alt="프로필 사진" />
+            <div class="about-info">
+              <h3>🐾 이름</h3>
+              조경진
+              <h3>🐾 MBTI</h3>
+              ESTP
+              <h3>🐾 취미</h3>
+              독서, 멍때리기(불멍,물멍,구름멍)
+            </div>
+          </div>
+        </section>
+        <section id="likes">
+          <h2>좋아하는 것</h2>
+          <table border="1">
+            <tbody>
+              <tr>
+                <th>음식</th>
+                <td>떡볶이, 쌀국수, 타코</td>
+              </tr>
+              <tr>
+                <th>계절</th>
+                <td>봄, 가을</td>
+              </tr>
+              <tr>
+                <th>색깔</th>
+                <td>하늘색, 마른장미색</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>학습목표 확인하기</h2>
+          <div class="goal-link">
+            <a href="goal.html"> 웹 개발 학습 목표 작성 페이지로 이동 </a> 
+          </div>
+         
+        </section>
+ <!--frome part-->
+        <section id="qna">
+          <h2>문의하기</h2>
+            <form action="#" method="post">
+              <p>이름 : <input type="text" name="user_name" /></p>
+              <p>이메일 : <input type="email" name="user_mail" /></p>
+              <p>
+                성별 : <input type="radio" name="sex" value="여자" /> 여자
+                <input type="radio" name="sex" value="남자" /> 남자
+              </p>
+              <p>문의 내용 : <textarea id="message" name="message"></textarea></p>
+              <button type="submit" class="btn">제출</button>
+            </form>
+          </div>
+          
+        </section>
+      </main>
+    
+    <footer>
+      <p>@2026 조경진 All rights reserved.</p>
+    </footer>
+  </body>
+</html>
